@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Infographic và Video</title>
+  <style>
+    :root{--max-width:960px;--gap:1.25rem}
+    body{
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      margin:0; padding:2rem; display:flex; justify-content:center;
+      background:#f7f8fa; color:#111;
+    }
+    .container{
+      width:100%; max-width:var(--max-width); display:grid;
+      grid-template-columns: 1fr; gap:var(--gap);
+      align-items:start;
+    }
+    @media(min-width:900px){
+      .container{ grid-template-columns: 1fr 1fr; }
+    }
+    figure{ margin:0; background:#fff; padding:1rem; border-radius:8px; box-shadow:0 6px 18px rgba(10,20,40,0.06)}
+    img.infographic{
+      width:100%; height:auto; display:block; border-radius:6px;
+    }
+    .meta{ font-size:0.95rem; color:#555; margin-top:.5rem }
+    .video-wrap video{ width:100%; height:auto; border-radius:6px; background:#000 }
+    .controls-row{ display:flex; gap:.5rem; align-items:center; margin-top:.5rem; flex-wrap:wrap }
+    a.download{ font-size:0.9rem; color:#0066cc; text-decoration:none }
+    figcaption{ margin-top:.5rem; color:#333 }
+  </style>
+</head>
+<body>
+  <div class="container">
+        <h1>Báo cáo Nội dung : Infographic và Video</h1>
+
+        <p class="description">
+        <div class="content-block">
+            <h2>1. Lợi ích công nghệ Số - Infographic</h2>
+            <p>Infographic: Lợi ích công nghệ số - tăng cường tương tác, tiếp cận tài nguyên, học tập cá nhân hóa và tiết kiệm thời gian.</p>
+    <figure>
+      <img class="infographic" src="Infographic - Lợi ích công nghệ số.png" alt="Infographic Tóm tắt Dữ liệu" />
+      <figcaption>
+        <strong>Infographic:</strong> Lợi ích công nghệ Số - Infographic
+        <div class="meta">Nguồn Infographic: Tạo bởi Canva AI (CC0)</div>
+      </figcaption>
+    </figure>
+    <div class="content-block">
+            <h2>2. Video MP4 Minh họa: Giới thiệu Lợi ích Công nghệ Số</h2>
+            <p>Đoạn video này cung cấp cái nhìn chi tiết, sinh động về cách công nghệ số thay đổi cuộc sống hàng ngày.</p>
+      <video controls width="100%" preload="metadata">
+        <source src="Giới thiệu lợi ích công nghệ số - CapCut.mp4" type="video/mp4" />
+        <a href="media/video.mp4" class="download"></a>.
+      </video>
+      <figcaption>
+        <div class="controls-row">
+          <small class="meta">Video: "Giới thiệu lợi ích công nghệ số" (Nguồn: CapCut).</small>
+          </figcaption>
+          <footer>
+            <p>&copy; 2025 Tổ chức Áo Đen (Black Organization). <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+   (CC BY 4.0)
+</a>
+</p>
+            <p style="margin-top: 5px;">
+                <span stylBe>Ghi chú nguồn: Mã nguồn HTML cơ bản được tạo ra với sự hỗ trợ của Công cụ AI (GitHub Copilot/Gemini).</span>
+            </p>
+        </footer>
+        </div>
+    </figure>
+  </main>
+</body>
+</html>
